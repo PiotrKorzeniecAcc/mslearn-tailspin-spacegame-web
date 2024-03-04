@@ -26,9 +26,9 @@ steps:
   displayName: 'Compile Sass assets'
 
 - script: |
-    dotnet test --output build --collect:"XPlat Code Coverage";
-    dotnet tool install -g dotnet-reportgenerator-globaltool;
-    reportgenerator -reports:'../coverage.cobertura.xml' -targetdir:'CoverageReports' -reporttypes:'Cobertura';
+    dotnet test --output build --collect:"XPlat Code Coverage"
+    dotnet tool install -g dotnet-reportgenerator-globaltool
+    echo "Hello ReportGenerator"
   displayName: 'Install reportgenerator tool'
 
 - task: gulp@1
