@@ -28,7 +28,4 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="dotnet-reportgenerator-globaltool" Version="5.2.2"/>
-  </ItemGroup>
 </Project>
